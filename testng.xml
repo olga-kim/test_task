@@ -1,0 +1,7 @@
+<suite name="Time test Suite" verbose="1">
+    <test name="BreadCrumbs Test">
+        <classes>
+            <class name="com.mckinsey.test.BreadCrumbsTest" />
+        </classes>
+    </test>
+</suite>
