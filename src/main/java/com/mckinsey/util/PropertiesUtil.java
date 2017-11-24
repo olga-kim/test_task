@@ -9,22 +9,28 @@ public class PropertiesUtil {
 
     private final static Logger LOGGER = Logger.getLogger(PropertiesUtil.class);
 
-    private static final String APPLICATION_PROPERTIES_FILE_NAME = "application.properties";
-    private static final String MAIN_URL_PROPERTY_NAME = "main.url";
+    private static final String EPAM_PROPERTIES_FILE_NAME = "epam.properties";
+    private static final String GMAIL_PROPERTIES_FILE_NAME = "gmail.properties";
+    private static final String URL_PROPERTY_NAME = "url";
 
-    private static Properties properties = new Properties();
+    private static Properties epamProperties = new Properties();
+    private static Properties gmailProperties = new Properties();
 
     static {
         try {
-            properties.load(PropertiesUtil.class.getClassLoader().getResourceAsStream(APPLICATION_PROPERTIES_FILE_NAME));
+            epamProperties.load(PropertiesUtil.class.getClassLoader().getResourceAsStream(EPAM_PROPERTIES_FILE_NAME));
+            gmailProperties.load(PropertiesUtil.class.getClassLoader().getResourceAsStream(GMAIL_PROPERTIES_FILE_NAME));
         } catch (IOException e) {
             LOGGER.error("Exception while properties file loading", e);
         }
     }
 
-    public static String getMainUrl() {
-        return properties.getProperty(MAIN_URL_PROPERTY_NAME);
+    public static String getEpamUrl() {
+        return epamProperties.getProperty(URL_PROPERTY_NAME);
     }
 
+    public static String getGmailUrl() {
+        return gmailProperties.getProperty(URL_PROPERTY_NAME);
+    }
 
 }

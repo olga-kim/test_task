@@ -1,5 +1,6 @@
-package com.mckinsey.pages;
+package com.mckinsey.pages.epam;
 
+import com.mckinsey.pages.BasePage;
 import com.mckinsey.util.PropertiesUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -15,11 +16,12 @@ public class MainPage extends BasePage {
     private WebElement solutionsMenu;
 
     public MainPage() {
+        super();
         PageFactory.initElements(driver, this);
     }
 
     public MainPage open() {
-        driver.get(PropertiesUtil.getMainUrl());
+        driver.get(PropertiesUtil.getEpamUrl());
         return this;
     }
 

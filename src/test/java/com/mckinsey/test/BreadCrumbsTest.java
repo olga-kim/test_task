@@ -1,8 +1,8 @@
 package com.mckinsey.test;
 
 import com.mckinsey.data.BreadCrumbsData;
-import com.mckinsey.pages.MainPage;
-import com.mckinsey.pages.SolutionPage;
+import com.mckinsey.pages.epam.MainPage;
+import com.mckinsey.pages.epam.SolutionPage;
 import org.testng.annotations.*;
 
 import static org.testng.Assert.assertEquals;

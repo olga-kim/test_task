@@ -3,5 +3,8 @@
         <classes>
             <class name="com.mckinsey.test.BreadCrumbsTest" />
         </classes>
+        <classes>
+            <class name="com.mckinsey.test.SeleniumTest" />
+        </classes>
     </test>
 </suite>
