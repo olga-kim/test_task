@@ -6,5 +6,5 @@ Feature: Calculator
     Then result should be <result>
 
     Examples:
-      | a | b | result  |
-      | 3 | 2 | 5       |
+      | a | b | result |
+      | 3 | 2 | 5      |
